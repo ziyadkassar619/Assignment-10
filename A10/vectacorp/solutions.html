@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Solutions - Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/stickynav/1.0.1/jquery.stickynav.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backtotop/1.1.0/jquery.backtotop.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#responsive-menu').mobileMenu();
+
+			$('#quick-nav').stickynav();
+
+			$.backToTop();
+		});
+	</script>
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="solutions" class="eleven columns">
+			<h4>Our Solutions</h4>
+			<nav id="quick-nav">
+				<ul>
+					<li><a href="#solution1">Solution 1</a></li>
+					<li><a href="#solution2">Solution 2</a></li>
+					<li><a href="#solution3">Solution 3</a></li>
+				</ul>
+			</nav>
+			
+			<h5 id="solution1">Solution 1</h5>
+			<p>Solution 1.</p>
+			
+			<h5 id="solution2">Solution 2</h5>
+			<p>Solution 2.</p>
+			
+			<h5 id="solution3">Solution 3</h5>
+			<p>Solution 3</p>
+		</section>
+		
+		<section id="testimonials" class="five columns">
+			<h4>Client Testimonials</h4>
+			<p>See what our clients are saying about us.</p>
+		</section>
+
+		<a href="#" id="back-to-top" style="display:none;">Back to Top</a>
+	</main>
+</body>
+</html>

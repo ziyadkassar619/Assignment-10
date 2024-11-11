@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Welcome to Vecta Corp.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/layout.css">
+
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+	<script src="js/jquery.mobilemenu.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#responsive-menu').mobileMenu();
+
+			$('#responsive-menu li a').each(function(index) {
+				var tooltips = [
+					"Vecta Corp. provides the best solutions.",
+					"Learn more about our company and team.",
+					"Vecta Corp. offers 3 solutions for prospecting, converting, and retaining customers.",
+					"Get support from us.",
+					"Reach out to our team."
+				];
+				$(this).attr('title', tooltips[index]);
+			});
+			
+			$('#responsive-menu li a').tooltip();
+			$("#tabs").tabs();
+			$("#accordion").accordion();
+		});
+	</script>
+</head>
+<body>
+	<main class="container">
+		<figure class="three columns">
+			<img src="images/logo.gif" class="scale-with-grid" alt="">
+		</figure>
+		
+		<nav class="thirteen columns">
+			<ul id="responsive-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="solutions.html">Solutions</a></li>
+				<li><a href="support.html">Support</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</nav>
+		
+		<header class="sixteen columns">
+			<img src="images/header.gif" class="scale-with-grid" alt="">
+		</header>
+		
+		<section id="welcome" class="five columns">
+			<h4>Welcome</h4>
+			<p>With innovative approaches and advanced methodologies, Vecta Corporation provides scalable business solutions to help companies achieve success through revenue increase, cost management, and user satisfaction. Our approach stems from the three most important business growth aspects: helping companies reach prospects, assist in converting prospects to customers, and assist in retaining those customers. This is accomplished through our interactive solutions and expertise in providing a memorable and positive user experience.</p>
+		</section>
+		
+		<section id="solutions" class="sixteen columns">
+			<h4>Our Solutions</h4> 
+			<div id="tabs">
+				<ul>
+					<li><a href="#tab-1">Solution 1</a></li>
+					<li><a href="#tab-2">Solution 2</a></li>
+					<li><a href="#tab-3">Solution 3</a></li>
+				</ul>
+				<div id="tab-1">
+					<alt="Solution 1" class="scale-with-grid">
+					<p>Solution 1</p>
+				</div>
+				<div id="tab-2">
+					<alt="Solution 2" class="scale-with-grid">
+					<p>Solution 2</p>
+				</div>
+				<div id="tab-3">
+					<alt="Solution 3" class="scale-with-grid">
+					<p>Solution 3</p>
+				</div>
+			</div>
+		</section>
+		
+		<section id="testimonials" class="sixteen columns">
+			<h4>Client Testimonials</h4>
+			<div id="accordion">
+				<h3>Testimonial 1</h3>
+				<div>
+					<p>Best company for solutions</p>
+				</div>
+				<h3>Testimonial 2</h3>
+				<div>
+					<p>10/10 would recommend</p>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
